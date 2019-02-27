@@ -1,0 +1,46 @@
+﻿  Performing Custom Build Tools
+  +-----------------------------------------------------------------------+
+  |                   meshc: Mesh compiler for ORBITER                    |
+  |        Build: Aug 28 2016      (c) 2001-2006 Martin Schweiger         |
+  +-----------------------------------------------------------------------+
+  
+  Mesh file name:
+  >> Variable suffix ('-' for none):
+  >> Output file name ('-' for default meshres.h):
+  >> 
+  Wrote mesh parameters to Atlantis\meshres.h
+  Performing Custom Build Tools
+  +-----------------------------------------------------------------------+
+  |                   meshc: Mesh compiler for ORBITER                    |
+  |        Build: Aug 28 2016      (c) 2001-2006 Martin Schweiger         |
+  +-----------------------------------------------------------------------+
+  
+  Mesh file name:
+  >> Variable suffix ('-' for none):
+  >> Output file name ('-' for default meshres.h):
+  >> 
+  Wrote mesh parameters to Atlantis\meshres_vc_hi.h
+  Performing Custom Build Tools
+  +-----------------------------------------------------------------------+
+  |                   meshc: Mesh compiler for ORBITER                    |
+  |        Build: Aug 28 2016      (c) 2001-2006 Martin Schweiger         |
+  +-----------------------------------------------------------------------+
+  
+  Mesh file name:
+  >> Variable suffix ('-' for none):
+  >> Output file name ('-' for default meshres.h):
+  >> 
+  Wrote mesh parameters to Atlantis\meshres_vc.h
+  Graph.cpp
+  TabDlg.cpp
+  AscentAP.cpp
+Atlantis\AscentAP.cpp(128): warning C4018: '<': signed/unsigned mismatch
+Atlantis\AscentAP.cpp(582): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+Atlantis\AscentAP.cpp(594): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+  Atlantis.cpp
+  PlBayOp.cpp
+  Common.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis\Debug\Atlantis.dll) does not match the Linker's OutputFile property value (C:\Orbiter2016\Modules\Plugin\Atlantis.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library Atlantis\Debug\Atlantis.lib and object Atlantis\Debug\Atlantis.exp
+  Atlantis.vcxproj -> C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis\Debug\Atlantis.dll

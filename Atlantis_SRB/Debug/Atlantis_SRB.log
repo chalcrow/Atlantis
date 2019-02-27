@@ -1,0 +1,6 @@
+﻿  Atlantis_SRB.cpp
+  Common.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis_SRB\Debug\Atlantis_SRB.dll) does not match the Linker's OutputFile property value (C:\Orbiter2016\Modules\Plugin\Atlantis_SRB.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library Atlantis_SRB\Debug\Atlantis_SRB.lib and object Atlantis_SRB\Debug\Atlantis_SRB.exp
+  Atlantis_SRB.vcxproj -> C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis_SRB\Debug\Atlantis_SRB.dll

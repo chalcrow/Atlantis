@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3019ADF5-B026-4EF6-8418-303CD8DA1170}</ProjectGuid>
+    <RootNamespace>Atlantis</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)..\..\resources\Orbiter vessel.props" />
+    <Import Project="..\..\resources\Orbiter plugin.props" />
+    <Import Project="$(ProjectDir)..\..\resources\Orbiter debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)..\..\resources\Orbiter vessel.props" />
+    <Import Project="..\..\resources\Orbiter plugin.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2020</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Atlantis\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Atlantis\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Atlantis\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Atlantis\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\..\Modules/Atlantis.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Atlantis;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>DlgCtrl.lib;UxTheme.lib;Atlantis_Tank.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Atlantis_Tank/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>4194304</StackReserveSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(ProjectName)\$(Configuration)\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\..\Modules/Atlantis.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\..\Modules/Atlantis.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Atlantis;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>DlgCtrl.lib;UxTheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>4194304</StackReserveSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(ProjectName)\$(Configuration)\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\..\Modules/Atlantis.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\Atlantis.msh">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo %(FullPath) - Atlantis\meshres.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">meshres.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo %(FullPath) - Atlantis\meshres.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">meshres.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\AtlantisVC.msh">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo %(FullPath) _VC Atlantis\meshres_vc_hi.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">meshres_vc_hi.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo %(FullPath) _VC Atlantis\meshres_vc_hi.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">meshres_vc_hi.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\~AtlantisVC_lo.msh">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo %(FullPath) _VC Atlantis\meshres_vc.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">meshres_vc.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo %(FullPath) _VC Atlantis\meshres_vc.h | $(SDKDir)\utils\meshc.exe
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">meshres_vc.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Atlantis\down.ico" />
+    <Image Include="Atlantis\ico00001.ico" />
+    <Image Include="Atlantis\ico00002.ico" />
+    <Image Include="Atlantis\ico00003.ico" />
+    <Image Include="Atlantis\ico00004.ico" />
+    <Image Include="Atlantis\icon1.ico" />
+    <Image Include="Bitmaps\tkbk_label.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Atlantis\Atlantis.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Dialog\Graph.cpp" />
+    <ClCompile Include="..\Common\Dialog\TabDlg.cpp" />
+    <ClCompile Include="Atlantis\AscentAP.cpp" />
+    <ClCompile Include="Atlantis\Atlantis.cpp" />
+    <ClCompile Include="Atlantis\PlBayOp.cpp" />
+    <ClCompile Include="Common.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Dialog\Graph.h" />
+    <ClInclude Include="..\Common\Dialog\TabDlg.h" />
+    <ClInclude Include="Atlantis\AscentAP.h" />
+    <ClInclude Include="Atlantis\Atlantis.h" />
+    <ClInclude Include="Atlantis\meshres.h" />
+    <ClInclude Include="Atlantis\meshres_vc.h" />
+    <ClInclude Include="Atlantis\PlBayOp.h" />
+    <ClInclude Include="Atlantis\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Atlantis_Tank.vcxproj">
+      <Project>{914856ee-9116-4da8-a94a-f400ab0e31b6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+﻿  Atlantis_Tank.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis_Tank\Debug\Atlantis_Tank.dll) does not match the Linker's OutputFile property value (C:\Orbiter2016\Modules\Plugin\Atlantis_Tank.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library Atlantis_Tank\Debug\Atlantis_Tank.lib and object Atlantis_Tank\Debug\Atlantis_Tank.exp
+  Atlantis_Tank.vcxproj -> C:\Orbiter2016\Orbitersdk\samples\Atlantis\Atlantis_Tank\Debug\Atlantis_Tank.dll

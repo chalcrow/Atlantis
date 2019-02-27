@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Mesh Files">
+      <UniqueIdentifier>{66cacbe0-bdbe-4d4c-b6d0-75153b019c0a}</UniqueIdentifier>
+      <Extensions>msh</Extensions>
+    </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{ef2807a9-c2a7-4d3b-898a-60df9294f9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{46e9e90d-2a42-4236-9d59-2027642f2a65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Atlantis\down.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Atlantis\ico00001.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Atlantis\ico00002.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Atlantis\ico00003.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Atlantis\ico00004.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Atlantis\icon1.ico">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="Bitmaps\tkbk_label.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Atlantis\Atlantis.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Atlantis\AscentAP.cpp" />
+    <ClCompile Include="Atlantis\Atlantis.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="..\Common\Dialog\Graph.cpp" />
+    <ClCompile Include="Atlantis\PlBayOp.cpp" />
+    <ClCompile Include="..\Common\Dialog\TabDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Atlantis\AscentAP.h" />
+    <ClInclude Include="Atlantis\Atlantis.h" />
+    <ClInclude Include="..\Common\Dialog\Graph.h" />
+    <ClInclude Include="Atlantis\meshres.h" />
+    <ClInclude Include="Atlantis\meshres_vc.h" />
+    <ClInclude Include="Atlantis\PlBayOp.h" />
+    <ClInclude Include="Atlantis\resource.h" />
+    <ClInclude Include="..\Common\Dialog\TabDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\Atlantis.msh">
+      <Filter>Mesh Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\AtlantisVC.msh">
+      <Filter>Mesh Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Meshes\Atlantis\~AtlantisVC_lo.msh">
+      <Filter>Mesh Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
